@@ -1,0 +1,11 @@
+{% extends 'parent/base.html' %}
+{% block title %}post Detail{% endblock %}
+{% block head %}{% endblock %}
+{% block content %}
+<h1>{{ post.title }} by {{ post.author }}</h1>
+    <h2>{{ post.description|linebreaks }}</h2>
+    <hr>
+    {{ post.publish }}
+
+
+{% endblock %}
